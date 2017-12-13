@@ -1,0 +1,175 @@
+[alumno@mod126 ~]$ ssh -X 201509973@192.168.1.200
+The authenticity of host '192.168.1.200 (192.168.1.200)' can't be established.
+RSA key fingerprint is 18:fa:8e:d7:d0:b7:35:ba:7f:fa:99:b1:52:b5:f9:f0.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.1.200' (RSA) to the list of known hosts.
+201509973@192.168.1.200's password: 
+/usr/bin/xauth:  file /home1/fis/2015/201509973/.Xauthority does not exist
+-bash-4.2$ ls
+bin
+-bash-4.2$ ls
+bin
+-bash-4.2$ cd Escritorio
+-bash: cd: Escritorio: No existe el fichero o el directorio
+-bash-4.2$ ls *.root
+ls: no se puede acceder a *.root: No existe el fichero o el directorio
+-bash-4.2$ cd
+-bash-4.2$ ls
+bin
+-bash-4.2$ export PATH=$ROOTSYS/bin:$PATH
+-bash-4.2$ export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
+-bash-4.2$ export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
+-bash-4.2$ vi .bashrc
+-bash-4.2$ source .bashrc
+-bash-4.2$ cd
+-bash-4.2$ ls
+analyzer.py
+bin
+classes.py
+roottree_leptons_GluGluHToZZTo4L_M125_14TeV_powheg2_JHUgenV702_pythia8_noPU.root
+-bash-4.2$ python analyzer.py 
+Traceback (most recent call last):
+  File "analyzer.py", line 2, in <module>
+    import ROOT
+ImportError: No module named ROOT
+-bash-4.2$ vi .bashrc
+-bash-4.2$ vi .bashrc
+
+[1]+  Detenido                vim .bashrc
+-bash-4.2$ vi .bashrc
+-bash-4.2$ vi .bashrc
+-bash-4.2$ python analyzer.py 
+Traceback (most recent call last):
+  File "analyzer.py", line 2, in <module>
+    import ROOT
+ImportError: No module named ROOT
+-bash-4.2$ vi .bashrc
+-bash-4.2$ source .bashrc
+-bash-4.2$ python analyzer.py 
+Error in <TFile::TFile>: file rootfiles/roottree_leptons_GluGluHToZZTo4L_M125_14TeV_powheg2_JHUgenV702_pythia8_noPU.root does not exist
+Traceback (most recent call last):
+  File "analyzer.py", line 51, in <module>
+    analyzer.initTree("HZZ4LeptonsAnalysis")
+  File "/home1/fis/2015/201509973/classes.py", line 60, in initTree
+    self.evTree.SetBranchStatus("*", 0)
+AttributeError: 'TObject' object has no attribute 'SetBranchStatus'
+-bash-4.2$ ls
+analyzer.py
+bin
+classes.py
+classes.pyc
+roottree_leptons_GluGluHToZZTo4L_M125_14TeV_powheg2_JHUgenV702_pythia8_noPU.root
+-bash-4.2$ vi analyzer.py 
+-bash-4.2$ v analyzer.py 
+bash: v: no se encontró la orden...
+-bash-4.2$ python analyzer.py
+Loop over event 0/100000 (0%)
+Loop over event 1000/100000 (1%)
+Loop over event 2000/100000 (2%)
+Loop over event 3000/100000 (3%)
+Loop over event 4000/100000 (4%)
+Loop over event 5000/100000 (5%)
+Loop over event 6000/100000 (6%)
+Loop over event 7000/100000 (7%)
+Loop over event 8000/100000 (8%)
+Loop over event 9000/100000 (9%)
+Loop over event 10000/100000 (10%)
+Loop over event 11000/100000 (11%)
+Loop over event 12000/100000 (12%)
+Loop over event 13000/100000 (13%)
+Loop over event 14000/100000 (14%)
+Loop over event 15000/100000 (15%)
+Loop over event 16000/100000 (16%)
+Loop over event 17000/100000 (17%)
+Loop over event 18000/100000 (18%)
+Loop over event 19000/100000 (19%)
+Loop over event 20000/100000 (20%)
+Loop over event 21000/100000 (21%)
+Loop over event 22000/100000 (22%)
+Loop over event 23000/100000 (23%)
+Loop over event 24000/100000 (24%)
+Loop over event 25000/100000 (25%)
+Loop over event 26000/100000 (26%)
+Loop over event 27000/100000 (27%)
+Loop over event 28000/100000 (28%)
+Loop over event 29000/100000 (29%)
+Loop over event 30000/100000 (30%)
+Loop over event 31000/100000 (31%)
+Loop over event 32000/100000 (32%)
+Loop over event 46000/100000 (46%)
+Loop over event 47000/100000 (47%)
+Loop over event 48000/100000 (48%)
+Loop over event 49000/100000 (49%)
+Loop over event 50000/100000 (50%)
+Loop over event 51000/100000 (51%)
+Loop over event 52000/100000 (52%)
+Loop over event 53000/100000 (53%)
+Loop over event 54000/100000 (54%)
+Loop over event 55000/100000 (55%)
+Loop over event 56000/100000 (56%)
+Loop over event 57000/100000 (57%)
+Loop over event 58000/100000 (58%)
+Loop over event 59000/100000 (59%)
+Loop over event 60000/100000 (60%)
+Loop over event 61000/100000 (61%)
+Loop over event 62000/100000 (62%)
+Loop over event 63000/100000 (63%)
+Loop over event 64000/100000 (64%)
+Loop over event 65000/100000 (65%)
+Loop over event 66000/100000 (66%)
+Loop over event 67000/100000 (67%)
+Loop over event 68000/100000 (68%)
+Loop over event 69000/100000 (69%)
+Loop over event 70000/100000 (70%)
+Loop over event 71000/100000 (71%)
+Loop over event 72000/100000 (72%)
+Loop over event 73000/100000 (73%)
+Loop over event 74000/100000 (74%)
+Loop over event 75000/100000 (75%)
+Loop over event 76000/100000 (76%)
+Loop over event 77000/100000 (77%)
+Loop over event 78000/100000 (78%)
+Loop over event 79000/100000 (79%)
+Loop over event 80000/100000 (80%)
+Loop over event 81000/100000 (81%)
+Loop over event 82000/100000 (82%)
+Loop over event 83000/100000 (83%)
+Loop over event 84000/100000 (84%)
+Loop over event 85000/100000 (85%)
+Loop over event 86000/100000 (86%)
+Loop over event 87000/100000 (87%)
+Loop over event 88000/100000 (88%)
+Loop over event 89000/100000 (89%)
+Loop over event 90000/100000 (90%)
+Loop over event 91000/100000 (91%)
+Loop over event 92000/100000 (92%)
+Loop over event 93000/100000 (93%)
+Loop over event 94000/100000 (94%)
+Loop over event 95000/100000 (95%)
+Loop over event 96000/100000 (96%)
+Loop over event 97000/100000 (97%)
+Loop over event 98000/100000 (98%)
+Loop over event 99000/100000 (99%)
+Loop over event 100000/100000 (100%)
+-bash-4.2$ root -l output
+Warning in <TApplication::GetOptions>: macro output not found
+root [0] 
+root [0] .q
+-bash-4.2$ root -l output.root
+root [0] 
+Attaching file output.root as _file0...
+(TFile *) 0x3696560
+root [1] TBrowser
+ROOT_prompt_1:1:1: warning: declaration does not declare anything
+      [-Wmissing-declarations]
+TBrowser
+^~~~~~~~
+root [2] .q
+-bash-4.2$ root -l output.root
+root [0] 
+Attaching file output.root as _file0...
+(TFile *) 0x1cbd380
+root [1] TBrowser g
+(TBrowser &) Name: Browser Title: ROOT Object Browser
+root [2] 
+
